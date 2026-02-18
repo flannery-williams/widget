@@ -150,7 +150,7 @@
   // ╔═══════════════════════════════════════════════════╗
   // ║  SET TO true TO PREVIEW, false FOR PRODUCTION     ║
   // ╚═══════════════════════════════════════════════════╝
-  const PREVIEW_MODE = true;
+  const PREVIEW_MODE = false;
 
   function render() {
     const now = new Date();
@@ -173,7 +173,7 @@
         const diff = Math.ceil((startDate - now) / 86400000);
         widget.innerHTML = `
           <div class="header">
-            <span class="title">Ramadan 1447h</span>
+            <span class="title">Ramadan</span>
           </div>
           <div class="message">
             <div class="main-text">Begins in ${diff} day${diff !== 1 ? 's' : ''}</div>
@@ -182,7 +182,7 @@
       } else {
         widget.innerHTML = `
           <div class="header">
-            <span class="title">Ramadan 1447h</span>
+            <span class="title">Ramadan</span>
           </div>
           <div class="message">
             <div class="main-text">Ramadan Mubarak</div>
@@ -196,7 +196,7 @@
 
     widget.innerHTML = `
       <div class="header">
-        <span class="title">Ramadan 1447h</span>
+        <span class="title">Ramadan</span>
         <span class="day-badge">Day ${day} of 30</span>
       </div>
       <table>
