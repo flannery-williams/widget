@@ -20,8 +20,8 @@
     background: linear-gradient(135deg, rgba(10, 22, 40, 0.92), rgba(18, 38, 65, 0.88));
     border: 1px solid rgba(120, 160, 210, 0.15);
     border-radius: 14px;
-    padding: 16px 20px 14px;
-    max-width: 520px;
+    padding: 12px 12px 12px;
+    max-width: 600px;
     margin: 0 auto;
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 24px rgba(0,0,0,0.35);
@@ -32,7 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(120, 160, 210, 0.12);
   }
@@ -42,7 +42,7 @@
     font-size: 18px;
     font-weight: 700;
     color: #d4c9a8;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
   }
 
   .day-badge {
@@ -60,12 +60,12 @@
   }
 
   th {
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: rgba(200, 200, 210, 0.4);
-    padding: 0 6px 7px;
+    padding: 0 4px 4px;
     text-align: center;
   }
 
@@ -73,7 +73,7 @@
     font-size: 19px;
     font-weight: 600;
     text-align: center;
-    padding: 5px 6px 2px;
+    padding: 4px 4px 4px;
     color: #e8e6df;
     letter-spacing: -0.3px;
     font-variant-numeric: tabular-nums;
@@ -173,7 +173,7 @@
         const diff = Math.ceil((startDate - now) / 86400000);
         widget.innerHTML = `
           <div class="header">
-            <span class="title">Ramadan</span>
+            <span class="title">Ramadan Fasting Times</span>
           </div>
           <div class="message">
             <div class="main-text">Begins in ${diff} day${diff !== 1 ? 's' : ''}</div>
@@ -182,7 +182,7 @@
       } else {
         widget.innerHTML = `
           <div class="header">
-            <span class="title">Ramadan</span>
+            <span class="title">Ramadan Fasting Times</span>
           </div>
           <div class="message">
             <div class="main-text">Ramadan Mubarak</div>
@@ -196,7 +196,7 @@
 
     widget.innerHTML = `
       <div class="header">
-        <span class="title">Ramadan</span>
+        <span class="title">Ramadan Fasting Times</span>
         <span class="day-badge">Day ${day} of 30</span>
       </div>
       <table>
